@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Credit Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="credit-card">
+        <div class="card-number" id="card-number">#### #### #### ####</div>
+        <div class="card-holder" id="card-holder">Card Holder</div>
+        <div class="card-expiry" id="card-expiry">MM/YY</div>
+    </div>
+    <form id="card-form">
+        <input type="text" id="input-card-number" placeholder="Card Number" maxlength="19">
+        <input type="text" id="input-card-holder" placeholder="Card Holder">
+        <input type="text" id="input-card-expiry" placeholder="MM/YY" maxlength="5">
+        <button type="button" id="download-card">Download Card</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
